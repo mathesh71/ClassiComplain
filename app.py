@@ -1,3 +1,12 @@
+try:
+    import nltk
+    nltk.download('brown')
+    nltk.download('punkt')
+    nltk.download('averaged_perceptron_tagger')
+    nltk.download('wordnet')
+except:
+    pass
+
 import streamlit as st
 import joblib
 from textblob import TextBlob
